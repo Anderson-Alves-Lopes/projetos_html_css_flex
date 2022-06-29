@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.container{
+    max-width:990px;
+    margin:0 auto;
+    padding:0 2%;
+    display:flex;
+}
+
+header{
+    background-color:#ccc;
+    padding:20px 0;
+    text-align: center;
+}
+header h1{
+    font-size:40px;
+    font-style:italic;
+    color:#666;
+}
+header h3{
+    font-size:25px;
+    color:#666;
+    margin-top: 10px;
+}
+.foto > .container{
+    justify-content: space-evenly;
+}
+.foto-img{
+    width:33.3%;
+    display:flex;
+    justify-content:space-evenly;
+    padding-top:80px;
+}
+.foto-img:nth-of-type(2){
+    padding-top:30px;
+}
+.foto-img img{
+    width:60%;
+    height: auto;
+}
+section.info > .container{
+    flex-wrap: wrap;
+   
+}
+section.info .info_descricao{
+    width:calc(100% / 3);
+    padding:15px;
+    margin-top:20px;
+}
+section.info .info_descricao:nth-child(even){
+    background-color: #ddd;
+}
+section.info .info_descricao:nth-child(odd){
+    background-color: #eee;
+}
+.info_descricao h4{
+    color:#333;
+    font-size:20px;
+    font-style:italic;
+
+}
+.info_descricao p{
+    color:#555;
+    font-size:17px;
+    line-height:20px;
+    margin-top:15px;
+}
+footer > .container{
+    flex-direction:column;
+    padding:20px;
+    
+}
+footer > .container p{
+    color:#555;
+    font-size:17px;
+}
+footer > .container a{
+    color:#000;
+    font-weight:bold;
+}
+.footer_evolucao{
+    margin:20px 0;
+}
+.footer_evolucao h1{
+    font-style:italic;
+    color:#444;
+    margin-bottom:20px;
+}
+.footer_wiki{
+    display:flex;
+   justify-content: space-between;
+    
+}
+.footer_wiki img{
+    width:80px;
+    margin-right:120px;
+      
+}
+.footer_wiki img:hover{
+    background-color: #ccc;
+}
+@media screen and (max-width:768px){
+    .footer_wiki img{
+        margin-right:0;
+    }
+}
+@media screen and (max-width:600px){
+    section.info .info_descricao{
+        width:95%;
+        margin:10px auto;
+    }
+    footer > .container{
+        text-align: center;
+    }
+    .footer_wiki{
+        flex-direction: column;
+    
+    }
+    .footer_wiki img{
+        margin:20px 0;
+    }
+}

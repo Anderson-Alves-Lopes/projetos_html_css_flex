@@ -1,0 +1,76 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background-color:#ddd ;
+}
+.container{
+    max-width:1100px;
+    margin:40px auto;
+}
+fieldset{
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.75);
+   -moz-box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.75);
+   box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.75);
+   background-color:#a0c6eb;
+   border:0;
+   border-radius: 5px;
+}
+fieldset legend{
+    margin:0 auto;
+    color:#777;
+    font-size:20px;
+
+   
+}
+
+.box{
+    width: 100%;
+    display:flex;
+    
+   
+}
+
+form{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+}
+form label{
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+    color:#777;
+    font-style:oblique;
+
+}
+form input{
+    width:80%;
+    height:30px;
+    border:1px solid #ccc;
+    padding-left:8px;
+    outline:none;
+    border-radius:3px;
+    color:#ccc;
+}
+form input[type=checkbox]{
+    width:20px;
+    
+}
+.input{
+    padding: 10px 0;
+    text-align:center;
+    width: 100%;
+    background-color: #3c8ee0;
+}
+.input >input{
+    padding:8px 50px;
+    border-radius: 5px;
+    border:none;
+    margin:0 15px;
+    font-size:16px;
+    color:#777;
+    background-color:#a0c6eb;
+}

@@ -1,0 +1,246 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    width:90%;
+    display:flex;
+    justify-content:space-between;
+    padding:15px 2%;
+    margin:0 auto;
+}
+header h3{
+    position:absolute;
+    right:5px;
+    top:35px;
+    font-size: 30px;
+    color:#555;
+    display:none;
+}
+header ul.desktop{
+    display:flex;
+    justify-content:space-around;
+    list-style-type:none;
+    margin-top:10px;
+}
+header .desktop  li a,
+header .mobile li a{
+    text-decoration:none;
+    font-size:19px;
+    color:#666;
+    padding:5px 15px;
+}
+header .desktop li a:hover{
+    background-color:#ccc;
+    color:#333;
+}
+header .mobile{display:none;}
+header h1{
+    font-size:35px;
+    color:#666;
+
+}
+section.banner{
+    width:100%;
+    height:90vh;
+    max-height:500px;
+    background-image:url('./imagens/hoteis.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    padding: 0 2%;
+    text-shadow:1px 1px 2px #222;
+    color:#fff;
+}
+section.banner h1{
+    font-size:60px;
+    margin-bottom:40px;
+}
+section.banner p{
+    font-size:25px;
+    max-width: 550px;
+    line-height:30px;
+    font-weight:normal;  
+    color:#fff;  
+}
+section.info{
+    display:flex;
+    flex-wrap:wrap;
+}
+.info_desc{
+    width:33.3%; 
+    margin-top:5px;   
+}
+.info_desc a{
+    padding:20px 50px;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    text-decoration:none;
+    color:#333;
+}
+.info_desc a:hover{
+    background-color: #f0f0f0;
+}
+.info_desc a > i{
+    font-size: 40px;
+    margin:10px 0;
+}
+.info_desc h3, p{
+    color:#555;
+    font-size: 16px;
+}
+.info_desc h3{
+    font-size:25px;
+}
+section#form{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  border-top:1px solid #ddd;
+  padding:30px 0;
+}
+section#form h2{
+    font-size:30px;
+    color:#666;
+    margin-bottom :15px;
+}
+.contato{
+    display:flex;
+    flex-wrap:wrap;
+    width:60%;
+    margin:0 auto;
+    border:1px solid #ddd;
+    
+    
+}
+label{
+    margin:20px;
+    font-family: Geneva;
+
+}
+label input{
+    width:100%;
+    height:35px;
+    padding-left:8px;
+    outline:none;
+    font-size:16px;
+    font-style:italic;
+
+}
+label textarea{
+    width:100%;
+    height: 150px;
+    outline:none;
+    padding:8px;
+}
+label input[type=submit]{
+    width:50%;
+    height:50px;
+    border:none;
+    border-radius:5px;
+    color:#fff;
+    background-color:#777;
+    font-size:20px;
+    position:relative;
+    left:25%;
+}
+label input[type=submit]:hover{
+    background-color:#aaa;
+    color:#ddd;
+}
+.text{
+    display:inline-block;
+    width:40%;
+}
+.text-contato{
+    width:85%;
+}
+footer{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    background-color:#ccc;
+    align-items: center;
+    justify-content: center;
+}
+footer .social{
+    background-color: #ddd;
+    width: 100%;
+    text-align: center;
+    padding:10px;
+}
+footer .social a,
+footer .direito a {
+    color:#333;
+    font-size: 30px;
+    padding: 0 10px;
+
+}
+footer .social a:hover,
+footer .direito a:hover{
+    background-color:#aaa;
+}
+footer .direito{
+    text-align: center;
+}
+footer .direito p{
+    padding:8px 0;
+}
+@media screen and (max-width:768px){
+    header h3{
+        display:block;
+        cursor: pointer;
+    }
+    header ul.desktop{display:none;}
+    header ul.mobile{
+        display:none;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position:absolute;
+        top:54px;
+        left:0;
+        width:100%;
+        height:150px;
+        background-color:#ddd;
+    }
+   
+    header li a{
+        line-height: 30px;
+       
+    }
+    header li a:hover{
+        text-decoration:underline;
+    }
+    section.banner h1{
+        font-size:40px;
+        margin:auto;
+    }
+    .info_desc{
+        width:50%;    
+    }
+    .contato{
+        width:97%;
+    }
+}
+@media screen and (max-width:500px){
+    header h1{
+        font-size:30px;
+    }
+    .info_desc{
+        width:100%;    
+    }
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Landing Page</title>
+    <meta name="description" content="Descrição do meu site." />
+    <meta name="keywords" content="palavras,separadas,por,virgula" />
+    <meta name="author" content="Anderson Alves" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image-x/png" href="#">
+    <link href="font-awesome/css/all.min.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Hotel São Lorenzo</h1>
+        <h3 class="menu"><i class="fa-solid fa-bars"></i></h3>
+        <ul class="desktop">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Post</a></li>
+            <li><a href="#form">Contact</a></li>
+        </ul>
+        <ul class="mobile">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Post</a></li>
+            <li><a href="#form">Contact</a></li>
+        </ul>
+    </header>
+    <section class="banner">
+        <h1>Visite hotel São Lorenzo</h1>
+        <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+    </section><!--banner-->
+    <section class="info">
+       <div class="info_desc">
+        <a href="">
+            <i class="fa-solid fa-mobile-screen"></i>
+            <h3>Lorem Ipsun</h3>
+            <p>Lorem ipsun silor domor porro dolorem sit amet.Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur</p>
+        </a>
+       </div>
+       <div class="info_desc">
+        <a href="">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <h3>Lorem Ipsun</h3>
+            <p>Lorem ipsun silor domor porro dolorem sit amet.Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur</p>
+        </a>
+       </div>
+       <div class="info_desc">
+        <a href="">
+            <i class="fa-regular fa-flag"></i>
+            <h3>Lorem Ipsun</h3>
+            <p>Lorem ipsun silor domor porro dolorem sit amet.Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur</p>
+        </a>
+       </div>
+       <div class="info_desc">
+        <a href="">
+            <i class="fa-solid fa-gear"></i>
+             <h3>Lorem Ipsun</h3>
+            <p>Lorem ipsun silor domor porro dolorem sit amet.Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur</p>
+            
+        </a>
+       </div>
+       <div class="info_desc">
+        <a href="">
+            <i class="fa-regular fa-star"></i>
+            <h3>Lorem Ipsun</h3>
+            <p>Lorem ipsun silor domor porro dolorem sit amet.Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur</p>
+        </a>
+       </div>
+       <div class="info_desc">
+        <a href="">
+            <i class="fa-regular fa-gem"></i>
+            <h3>Lorem Ipsun</h3>
+            <p>Lorem ipsun silor domor porro dolorem sit amet.Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur</p>
+        </a>
+       </div>
+    </section><!---info-->
+    <section id="form">
+        <h2>Entre Contato</h2>
+        <div class="contato">
+            <label class="text">
+                Nome<br>
+                <input placeholder="Nome" type="text" name="nome">
+            </label>
+            <label class="text">
+                Sobrenome<br>
+                <input placeholder="Sobrenome" type="text" name="nome">
+            </label>
+            <label class="text-contato">
+                E-mail<br>
+                <input placeholder="E-mail" type="email" name="e-mail">
+            </label>
+            <label class="text-contato">
+                Telefone<br>
+                <input placeholder="Telefone" type="tel" name="telefone">
+            </label>
+            <label class="text-contato">
+                <textarea type="mensagem" placeholder="Deixe sua mensagem"></textarea>
+            </label>
+            <label class="text-contato">
+                <input type="submit" value="Enviar">
+            </label>
+        </div>
+    </section><!--form-->
+    <footer>
+        <div class="social">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-whatsapp-square"></i></a>
+        </div>
+        <div class="direito">
+            <p>Todos os direitos reservados a Anderson Alves</p>
+            <a target="_blank" href="https://www.linkedin.com/in/anderson-alves-lopes-04670722b/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
+    <script src="jquery.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".menu").click(function(){
+            $("ul.mobile").slideToggle(1000);
+        });
+      });
+            
+        
+    </script>
+</body>
+</html>
