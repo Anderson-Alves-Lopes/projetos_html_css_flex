@@ -36,6 +36,7 @@ header > .container{
     margin:auto;
     display:flex;
     height:100px;
+    justify-content: space-between;
     align-items:center;
 }
 .logo{
@@ -52,6 +53,7 @@ header > .container{
    top:5px;
    font-size:25px;
    color:var(--bg-orange);
+   display:block;
     
 }
 .menu-opener{display:none;}
@@ -74,7 +76,7 @@ header > .container{
     display:flex;
     align-items:center;
     border-bottom:5px solid #000;
-    font-size:13px;
+    font-size:12px;
 }
 .menu li a:hover,
 .menu .active a{
@@ -810,7 +812,7 @@ footer .footer-form input[type=e-mail]{
     background-color:#000;
 
 }
-@media screen and (max-width:800px){
+@media screen and (max-width:900px){
     section.banner .slide-area{
         width:100%;
     }
@@ -923,7 +925,7 @@ footer .footer-form input[type=e-mail]{
     .section-contato input[type=text],
     .section-contato input[type=email],
     .section-contato textarea{
-        width:80%;
+        width:85%;
     }
     .section-endereco{
         width:80%;
@@ -942,6 +944,11 @@ footer .footer-form input[type=e-mail]{
         margin-bottom:20px;
     }
 
+}
+@media screen and (max-width:600px){
+    .section-team{
+        width: 290px;
+    }
 }
 @media screen and (max-width:450px){
     section.banner .slide-area h1{
@@ -965,9 +972,7 @@ footer .footer-form input[type=e-mail]{
         margin:0 2%;
     }
     
-    .section-team{
-        width: 290px;
-    }
+  
     .section-company{
         width:50%;
        
